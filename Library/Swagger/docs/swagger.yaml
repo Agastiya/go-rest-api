@@ -1,0 +1,23 @@
+basePath: /skeleton
+host: localhost:7000
+info:
+  contact: {}
+  description: Go rest API Skeleton
+  title: Go Rest API
+  version: "1.0"
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses: {}
+      tags:
+      - Ping
+securityDefinitions:
+  Bearer:
+    in: Header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
